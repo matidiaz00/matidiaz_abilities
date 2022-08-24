@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "matidiaz-f3c64"
+  },
+  "targets": {
+    "matidiaz-f3c64": {
+      "hosting": {
+        "abilities": [
+          "matidiaz-abilities"
+        ]
+      }
+    }
+  }
+}
