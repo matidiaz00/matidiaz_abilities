@@ -19,14 +19,6 @@ jobs:
         with:
           node-version: 16.14.2
 
-      - name: Create firebase.sdk.key.json file
-        id: create-json
-        uses: jsdaniell/create-json@1.1.2
-        with:
-          name: "firebase.sdk.key.json"
-          json: ${{ secrets.FIREBASE_SDK_KEY }}
-          dir: '/'
-
       - id: 'auth'
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v0'
