@@ -41,4 +41,4 @@ jobs:
         run: firebase target:apply hosting user ${{ secrets.FIREBASE_USER_TARGET_NAME }}
 
       - name: Deploy to Firebase
-        run: firebase deploy
+        run: firebase deploy --only hosting
