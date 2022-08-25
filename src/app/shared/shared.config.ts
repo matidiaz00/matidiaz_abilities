@@ -19,7 +19,7 @@ export const Components = [
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-const AngularModules = [
+export const AngularModules = [
     CommonModule,
     RouterModule
 ]

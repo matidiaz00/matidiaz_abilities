@@ -2,7 +2,6 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { Pages } from './app.config';
 import { Components } from './shared/shared.config';
 
 describe('AppComponent', () => {
@@ -13,8 +12,7 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        Components,
-        Pages
+        Components
       ],
       schemas: [ NO_ERRORS_SCHEMA ]
     }).compileComponents();

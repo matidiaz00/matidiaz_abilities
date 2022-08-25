@@ -8,6 +8,13 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matidiaz00/matidiaz_abilities.git"
+  },
+  "author": "Matias Diaz",
+  "license": "ISC",
+  "homepage": "https://github.com/matidiaz00/matidiaz_abilities#readme",
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
