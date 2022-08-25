@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'category-page',
+  selector: 'page-category',
   templateUrl: './category.component.html'
 })
-export class CategoryPageComponent {}
+export class PageCategoryComponent {}

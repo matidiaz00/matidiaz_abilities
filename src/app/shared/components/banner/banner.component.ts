@@ -9,7 +9,7 @@ export interface BannerInterface {
 }
 
 @Component({
-  selector: 'banner',
+  selector: 'app-banner',
   templateUrl: './banner.component.html'
 })
 export class BannerComponent {

@@ -1,11 +1,11 @@
 <div *ngFor="let category of data; index as i">
     <div class="row m-0">
         <div class="col-8 p-0">
-            <banner [data]="category"></banner>
+            <app-banner [data]="category"></app-banner>
         </div>
         <div class="w-100 row my-3">
             <div class="col-3 my-3" *ngFor="let logo of category.logo; index as i">
-                <logo [data]="logo"></logo>
+                <app-logo [data]="logo"></app-logo>
             </div>
         </div>
     </div>

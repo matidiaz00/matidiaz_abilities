@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'filter-mobile',
+  selector: 'app-filter-mobile',
   templateUrl: './filter-mobile.component.html'
 })
 export class FilterMobileComponent {}

@@ -7,7 +7,7 @@ export interface LogoInterface {
 }
 
 @Component({
-  selector: 'logo',
+  selector: 'app-logo',
   templateUrl: './logo.component.html'
 })
 export class LogoComponent {

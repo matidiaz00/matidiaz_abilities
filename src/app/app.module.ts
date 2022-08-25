@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-
-import { AngularModules, ExternalModules } from './configurations/modules';
-import { Bootstrap, Components, Pages } from './configurations/components';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { Bootstrap, Modules, Pages } from './app.config';
 
 @NgModule({
-  declarations:     [ Components, Pages ],
-  imports:          [ AngularModules, ExternalModules ],
+  declarations:     [ Bootstrap, Pages ],
+  imports:          [ Modules ],
   bootstrap:        [ Bootstrap ],
+  schemas:          [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

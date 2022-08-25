@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { BannerInterface } from '../../components/banner/banner.component'
-import { LogoInterface } from '../../components/logo/logo.component'
+import { BannerInterface } from '../../shared/components/banner/banner.component'
+import { LogoInterface } from '../../shared/components/logo/logo.component'
 
 interface DataInterface extends BannerInterface {
   logo: LogoInterface[];
 }
 
 @Component({
-  selector: 'home-page',
+  selector: 'page-home',
   templateUrl: './home.component.html'
 })
-export class HomePageComponent {
+export class PageHomeComponent {
 
   public data: DataInterface[] = [
     {
