@@ -12,11 +12,6 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v3
 
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v0
-        with:
-          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
-
       - name: Use Node.js v16.14.2
         uses: actions/setup-node@v1
         with:
