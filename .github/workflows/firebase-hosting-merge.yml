@@ -19,6 +19,17 @@ jobs:
         with:
           node-version: 16.14.2
 
+      - name: Create firebase.sdk.key.json file
+        id: create-json
+        uses: jsdaniell/create-json@1.1.2
+        with:
+          name: "firebase.sdk.key.json"
+          json: ${{ secrets.FIREBASE_SDK_KEY }}
+          dir: '/'
+
+      - name: Configurar la variable de entorno
+        run: export GOOGLE_APPLICATION_CREDENTIALS='/firebase.sdk.key.json'
+
       - name: Install NPM dependencies
         run: npm ci
 
